@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ManHinhChoActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOPE PS"
+        android:layout_marginTop="80dp"
+        android:textColor="#ff4500"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/card"
+        app:lottie_repeatMode="reverse" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng các bạn đã đến với SHOPE PS"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:inputType="text"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_marginBottom="200dp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/loadding_pro_splas" />
+</FrameLayout>

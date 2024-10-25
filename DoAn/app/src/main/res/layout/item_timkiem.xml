@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageseach"
+            android:src="@drawable/dra_email"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/item_chitiet_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/timkiem_ten"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tên Sản Phẩm"
+                android:textStyle="bold"
+                android:layout_marginTop="1.5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_marginBottom="1.5dp"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/timkiemgia"
+                android:layout_width="match_parent"
+                android:textColor="#F44336"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:paddingLeft="10dp"
+                android:text="Đơn giá"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

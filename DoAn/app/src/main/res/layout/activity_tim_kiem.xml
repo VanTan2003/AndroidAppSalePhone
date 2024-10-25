@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TimKiemActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#03A9F4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Tìm Kiếm Sản Phẩm"
+        app:titleTextColor="@color/white">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_giohang"
+            android:layout_width="55dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="10dp">
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/badgesoluong"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="top|right" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/add_shopping_cart_24" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <Spinner
+        android:id="@+id/spinnerTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edtcostum"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp" />
+    <Spinner
+        android:id="@+id/spinnerKhoanggia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edtcostum"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp" />
+    <EditText
+        android:id="@+id/txttimkiemnhap"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edtcostum"
+        android:drawableLeft="@drawable/seach1"
+        android:drawablePadding="5dp"
+        android:hint="Bạn cần tìm gì?"
+        android:paddingLeft="10dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
